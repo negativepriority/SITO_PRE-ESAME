@@ -1,0 +1,106 @@
+@charset "UTF-8";
+:root {
+  --white-100: #FEFAE0;
+  --white-200: hsl(206, 5%, 90%);
+  --white-300: hsl(206, 5%, 80%);
+  --white-400: hsl(206, 5%, 65%);
+  --white-500: hsl(206, 5%, 45%);
+  --black-100: hsl(210, 20%, 10%);
+  --black-200: hsl(210, 20%, 8%);
+  --black-300: #283618;
+  --black-400: hsl(210, 20%, 4%);
+  --black-500: hsl(0, 0%, 0%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  cursor: none;
+}
+
+a,
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.section2 {
+  margin: 0 auto;
+  padding-block: 4rem;
+}
+
+.container2 {
+  max-width: 65rem;
+  height: auto;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: #283618;
+}
+
+.swiper-pagination-bullet:hover {
+  cursor: none;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 1rem;
+  width: 2rem;
+  height: 2rem;
+  opacity: 1;
+  border-radius: 25%;
+  color: #FEFAE0;
+  background: #283618;
+}
+
+@media (max-width: 1025px) {
+  .container2 {
+    max-width: 35rem;
+    padding-inline: 1.25rem;
+  }
+}
+@media (max-width: 1025px) {
+  .container2 {
+    max-width: 30rem;
+    padding-inline: 1.25rem;
+  }
+}
+@media (max-width: 430px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+  .container2 {
+    max-width: 65rem;
+    padding-inline: 1.25rem;
+  }
+}/*# sourceMappingURL=style3.css.map */

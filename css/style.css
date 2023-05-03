@@ -1,0 +1,899 @@
+::selection {
+  background-color: rgb(12, 12, 12);
+  color:rgb(240, 233, 233) 
+}
+
+html {
+  cursor: none;
+}
+
+a:hover {
+  cursor: none;
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 9999;
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: .5;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 9998;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+  
+}
+
+.hover {
+  background-color: #fcc36f;
+  transition: transform .12s;
+  opacity: 0.5;
+  pointer-events: none;
+
+}
+
+
+
+/*.card:hover .image .hover {
+  background-color: #fcc36f;
+  pointer-events: auto;
+
+}*/
+
+
+
+/* Funziona SOLO su Firefox */
+* {
+  scrollbar-width: none;
+  /* scrollbar-width: auto;*/
+  /* scrollbar-gutter: stable both-edges;*/
+   /*scrollbar-color: #283618 #ebe3b4;;*/
+  
+}
+
+/* Funziona su Chrome, Edge, e Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #283618;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #FEFAE0;
+  border-radius: 30px;
+  border: 4px solid #283618;
+}
+
+body{
+margin:0px;
+background-color:#FEFAE0;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #283618;
+  padding: 2%;
+}
+
+header div.logo {
+  display: flex;
+  align-items: center;
+}
+
+header div.logo a{
+  color: #FEFAE0;
+  font-family: 'Poppins';
+  font-weight: 700;
+  margin: 0 0 0 16px;
+  font-size: 25px;
+  display: flex;
+}
+
+header div.logo a:hover{
+  color:#85D32C;
+}
+
+header a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 18px;
+  color: #FEFAE0;
+}
+
+header a:hover {
+  font-family: 'Poppins';
+  text-decoration: none;
+  color:#85D32C;
+}
+
+header ul {
+  margin: 0%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 40px 0 0;  /* prima cifra top seconda cifra right terza bottom quarta top */
+}
+
+section.titolo {
+padding: 2%;
+font-size: 115px;
+font-family: 'Poppins';
+font-weight: 700;
+color: #283618;
+line-height: 155%;
+letter-spacing: -9px;
+opacity: 0;
+animation: text-in 1.2s ease-in-out forwards;
+}
+
+@keyframes text-in {
+from {
+  opacity: 0;
+  transform: translateX(-70%);
+}
+to {
+  opacity: 1;
+  transform: translateX(0);
+}
+}
+
+.grid, .card {
+max-width: 1200px;
+margin: auto; /* centro l'elemento nella pagina */
+padding: 10px;
+
+}
+
+.grid {
+margin: 60px auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+/* grid-template-columns: 1fr 1fr 1fr; */
+gap: 100px;
+
+
+}
+
+.grid{
+color:#283618;
+font-weight: 500;
+}
+
+.grid h2 {
+padding: 0%;
+margin: 5% 0 0 0;
+font-size: 40px;
+font-family: 'Poppins';
+font-weight: 500;
+line-height: 155%;
+letter-spacing: -1px;
+text-align: center;
+
+}
+
+.grid :hover {
+color:#85D32C;
+}
+
+.card {
+transition: transform 0.23s ease-in-out, opacity 0.5s ease-in-out; /*durata animazione zoom card e durata opacità reveal delle card*/
+transform-origin: center;
+position: relative;
+opacity: 0; /* Inizialmente impostiamo l'opacità a 0 */
+
+}
+
+.card:hover {
+transform: scale(1.05);
+
+}
+
+.card img {
+max-width: 100%;
+position: relative;
+
+}
+
+/* Aggiungiamo una classe "appear" alle card quando si scorre la pagina */
+.card.appear {
+opacity: 1;
+}
+
+main {
+/*background-color: rgb(226, 4, 4);*/
+margin: 0 0 80px 0;
+}
+
+footer {
+  max-width:100% ;
+align-items: center;
+display: flex;
+justify-content: space-between;
+background-color: #283618;
+padding: 1.5%;
+}
+
+footer div.Copyright {
+
+display: flex;
+align-items: center;
+}
+
+.footer-container{
+width: 100%;
+}
+
+footer a, footer h3 {
+font-family: 'Poppins';
+font-weight: 400;
+text-decoration: none;
+font-size: 16px;
+color: #FEFAE0;
+}
+
+footer a:hover {
+font-family: 'Poppins';
+text-decoration: none;
+color:#85D32C;
+}
+
+footer ul {
+margin: 0%;
+list-style-type: none;
+display: flex;
+align-items: center;
+text-align: center;
+
+margin: 0px 0px 0px 20px;
+}
+
+footer li {
+display: inline-block;
+padding: 0 40px 0 0;
+}
+
+@media (max-width:1200px) {
+  html {
+    cursor: default;
+  }
+  
+  a:hover {
+    cursor: pointer;
+  }
+  
+  .cursor {
+    opacity: 0;
+  }
+  
+  .cursor2 {
+    opacity: 0;
+  }
+  
+  .cursorinnerhover {
+    opacity: 0;
+    
+  }
+  
+  .hover {
+    opacity: 0;
+  
+  }
+}
+
+@media (max-width: 1050px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+.grid {
+ background-color: aqua;
+}
+section.titolo {
+  padding: 2%;
+  font-size: 99px;
+  line-height: 155%;
+  letter-spacing: -9px;
+  }
+  
+.testo h2 {
+font-size:35px;
+}
+}
+
+@media (max-width: 950px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+.grid {
+    background: chartreuse;
+}
+section.titolo {
+  padding: 2%;
+  font-size: 92px;
+  line-height: 155%;
+  letter-spacing: -9px;
+  }
+.testo h2 {
+  font-size:34px;
+ }
+
+/*header {
+    flex-direction: column;
+    gap: 10px;
+} */
+}
+
+@media (max-width: 875px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+.grid {
+    background: rgb(255, 0, 170);
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+section.titolo {
+  padding: 2%;
+  font-size: 105px;
+  line-height: 155%;
+  letter-spacing: -9px;
+  }
+.testo h2 {
+  font-size:42px;
+ }
+
+}
+ 
+@media (max-width: 835px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+  .grid {
+      background: rgb(0, 89, 255);
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .grid h2 {
+    font-size:42px;
+   }
+   header {
+    padding: 4%;
+  }
+  
+  header div.logo a{
+    margin: 0 0 0 1px;
+    font-size: 25px;
+
+  }
+  
+  header a {
+    font-size: 16px;
+  }
+  
+  header li {
+    padding: 0 29px 0 0;  /* prima cifra top seconda cifra right terza bottom quarta top */
+  }
+  header ul{
+    padding: 0%;
+
+    margin: 0px -8px 0px 0px;
+  }
+  
+  footer {
+  padding: 1.5%;
+  }
+  
+  footer a, footer h3 {
+  font-size: 13px;
+  }
+  
+  footer ul {
+  margin: 0%;
+  margin: 0px 0px 0px 20px;
+
+  }
+  
+  footer li {
+  padding: 0 20px 0 0;
+
+  }
+
+
+
+
+  }
+
+  @media (max-width: 630px) {
+    .grid{
+     background: rgb(175, 8, 226);;
+    }
+    .card {
+      width:75%;
+     }
+     .grid h2 {
+      font-size:36px;
+     }
+     section.titolo {
+      padding: 2%;
+      font-size: 101px;
+      line-height: 155%;
+      letter-spacing: -7px;
+
+      }
+      footer {
+        padding: 2.5%;
+        }
+        
+        footer a, footer h3 {
+        font-size: 13px;
+        }
+        
+        footer ul {
+        margin: 0%;
+        margin: 0px 0px 0px 20px;
+      
+        }
+        
+        footer li {
+        padding: 0 20px 0 0;
+      
+        }
+      
+     
+  }
+
+  @media (max-width: 585px) {
+    .grid{
+     background: rgb(0, 255, 76);;
+    }
+    .card {
+      width:75%;
+     }
+     .grid h2 {
+      font-size:28px;
+     }
+     section.titolo {
+      padding: 2%;
+      font-size: 77px;
+      line-height: 155%;
+      letter-spacing: -7px;
+
+      }
+      footer {
+        padding: 2.5%;
+        }
+        
+        footer a, footer h3 {
+        font-size: 9px;
+        }
+        
+        footer ul {
+        margin: 0%;
+        margin: 0px 0px 0px 20px;
+      
+        }
+        
+        footer li {
+        padding: 0 20px 0 0;
+      
+        }
+        .Copyright2 h3{
+          margin: 0px 1px 0px 0px;
+
+        }
+  }
+  
+
+   
+   @media (max-width: 430px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+    .grid {
+        background: rgb(255, 153, 0);
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        padding: 0% 0 0 0;
+    }
+    section.titolo {
+      padding: 2%;
+      font-size: 70px;
+      line-height: 155%;
+      letter-spacing: -7px;
+
+      }
+      .grid h2 {
+        font-size:32px;
+       }
+       .card {
+        width:73%;
+       }
+       
+       header {
+        padding: 5%;
+      }
+      
+      header div.logo a{
+        margin: 0 0 0 1px;
+        font-size: 25px;
+
+      }
+      
+      header a {
+        font-size: 14px;
+      }
+      
+      header li {
+        padding: 0 20px 0 0;  /* prima cifra top seconda cifra right terza bottom quarta top */
+      }
+      header ul{
+        padding: 0%;
+
+        margin: 0px -8px 0px 0px;
+      }
+      footer {
+        padding: 2.5%;
+        }
+        
+        footer a, footer h3 {
+        font-size: 8px;
+        }
+        
+        footer ul {
+        margin: 0%;
+          margin: 0px 0px 0px -14px;
+      
+        }
+        
+        footer li {
+          margin: 0px 0px 0px 20px;
+          padding: 0 0px 0 0;
+
+      
+        }
+        .Copyright2 h3{
+          margin: 0px 1px 0px 0px;
+   
+        }
+
+      }
+
+
+     @media (max-width: 383px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+      .grid {
+          background: rgb(255, 0, 0);
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          gap:70px;
+
+ 
+      }
+      section.titolo {
+        padding: 2%;
+        font-size: 62px;
+        line-height: 155%;
+        letter-spacing: -6px;
+        }
+      .grid h2 {
+        font-size:32px;
+       }
+       .card {
+        width:80%;
+       }
+       header {
+        padding: 5%;
+      }
+      
+      header div.logo a{
+        margin: 0 0 0 1px;
+        font-size: 23px;
+
+      }
+      
+      header a {
+        font-size: 14px;
+      }
+      
+      header li {
+        padding: 0 20px 0 0;  /* prima cifra top seconda cifra right terza bottom quarta top */
+      }
+      header ul{
+        padding: 0%;
+
+        margin: 0px -8px 0px 0px;
+      }
+      footer {
+        padding: 2.5%;
+        }
+        
+        footer a, footer h3 {
+        font-size: 6px;
+        }
+        
+        footer ul {
+          margin: 0%;
+            margin: 0px 0px 0px -14px;
+        
+          }
+          
+          footer li {
+            margin: 0px 0px 0px 20px;
+            padding: 0 0px 0 0;
+          }
+        .Copyright2 h3{
+          margin: 0px 1px 0px 0px;
+   
+        }
+      }
+
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/* pagina illustratori */
+
+
+
+
+.titolo-artista   {
+overflow: hidden;
+display: flex; /* Aggiunge il modello di box-flex */
+align-items: center; /* Allinea verticalmente al centro */
+margin: 70px 0px 0px 0px;
+padding: 1%;
+font-size: 130px;
+font-family: 'Poppins';
+font-weight: 700;
+color: #283618;
+line-height: 100%;
+letter-spacing: -6px;
+opacity: 0;
+animation: text-in 1.2s ease-in-out forwards;
+
+
+/* opacity: 0; */
+/* animation: text-in 1.2s ease-in-out forwards; */
+
+}
+
+.titolo-artista img {
+
+
+  max-width: 100%;
+  padding: 2%;
+  float: left; /* Posizionamento a sinistra */
+  margin: 0px 20px 0px 0px; /* Aggiusta lo spazio tra l'immagine e il testo */
+  /* opacity: 0; */
+  /* animation: text-in 1.2s ease-in-out forwards; */
+   /* background-color: rgb(179, 255, 0); */
+
+}
+
+.titolo-artista h1 {
+  margin: 0; /* Rimuove il margine predefinito del titolo */
+  
+}
+
+.grosso-paragrafo {
+ 
+display: flex; /* Aggiunge il modello di box-flex */
+ align-items: left; /* Allinea verticalmente al centro */
+ padding: 3.3%;
+ font-size: 22px;
+ font-family: 'Poppins';
+ font-weight: 500;
+ color: #283618;
+ line-height: 135%;
+ letter-spacing: -0.7px;
+ transition: opacity 0.5s ease-in-out;
+ opacity: 1;
+
+}
+
+/* @media screen and (max-width: 600px) {
+  .titolo-artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 100px;
+    text-align: center;
+    line-height: 93%;
+    background-color: #fcc36f;
+    margin: 30px 0 50px 0;
+  }
+
+  
+  .titolo-artista img {
+    margin: 0 0 20px ;
+  }
+} */
+
+    @media (max-width: 1055px) {
+      main{
+        background-color: darkgreen;
+      }
+      .titolo-artista {
+        overflow: hidden;
+        display: flex; /* Aggiunge il modello di box-flex */
+        align-items: center; /* Allinea verticalmente al centro */
+        margin: 70px 0px 0px 0px;
+        padding: 1%;
+        font-size: 105px;
+        line-height: 100%;
+        letter-spacing: -5px;
+  
+
+    }
+    
+     
+      .titolo-artista img {
+        width: 390px;
+        padding: 2%;
+        float: left; /* Posizionamento a sinistra */
+        margin: 0px 20px 0px 0px; /* Aggiusta lo spazio tra l'immagine e il testo */
+        /* opacity: 0; */
+        /* animation: text-in 1.2s ease-in-out forwards; */
+         /* background-color: rgb(179, 255, 0); */
+      
+      }
+    }
+ 
+    @media (max-width: 950px) {
+      main{
+        background-color: rgb(255, 0, 0);
+      }
+      .titolo-artista {
+        overflow: hidden;
+        display: flex; /* Aggiunge il modello di box-flex */
+        align-items: center; /* Allinea verticalmente al centro */
+        margin: 70px 0px 0px 0px;
+        padding: 1%;
+        font-size: 100px;
+        line-height: 100%;
+        letter-spacing: -5px;
+  
+
+    }
+    
+     
+      .titolo-artista img {
+        width: 320px;
+        padding: 2%;
+        float: left; /* Posizionamento a sinistra */
+        margin: 0px 20px 0px 0px; /* Aggiusta lo spazio tra l'immagine e il testo */
+        /* opacity: 0; */
+        /* animation: text-in 1.2s ease-in-out forwards; */
+         /* background-color: rgb(179, 255, 0); */
+      
+      }
+      .grosso-paragrafo {
+ 
+         display: flex; /* Aggiunge il modello di box-flex */
+         align-items: left; /* Allinea verticalmente al centro */
+         padding: 3.3%;
+         font-size: 19px;
+         line-height: 135%;
+         letter-spacing: -0.5px;
+
+        }
+    }
+    @media (max-width: 835px) {
+      main{
+        background-color: rgb(123, 255, 0);
+      }
+      .titolo-artista {
+        overflow: hidden;
+        display: flex; /* Aggiunge il modello di box-flex */
+        align-items: center; /* Allinea verticalmente al centro */
+        margin: 70px 0px 0px 0px;
+        padding: 1%;
+        font-size: 80px;
+        line-height: 100%;
+        letter-spacing: -5px;
+  
+
+    }
+    
+     
+      .titolo-artista img {
+        width: 270px;
+        padding: 2%;
+        float: left; /* Posizionamento a sinistra */
+        margin: 0px 20px 0px 0px; /* Aggiusta lo spazio tra l'immagine e il testo */
+        /* opacity: 0; */
+        /* animation: text-in 1.2s ease-in-out forwards; */
+         /* background-color: rgb(179, 255, 0); */
+      
+      }
+      .grosso-paragrafo {
+ 
+         display: flex; /* Aggiunge il modello di box-flex */
+         align-items: left; /* Allinea verticalmente al centro */
+         padding: 3.3%;
+         font-size: 15px;
+         line-height: 135%;
+         letter-spacing: -0.5px;
+
+        }
+    }
+    
+    
+    @media (max-width: 655px) {
+      main{
+        background-color: rgb(255, 0, 119);
+      }
+      .titolo-artista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 70px;
+        text-align: center;
+        line-height: 93%;
+        margin: 30px 0 30px 0;
+      }
+    
+      
+      .titolo-artista img {
+        margin: 0 0 15px ;
+        width: 290px;
+        padding: 2%;
+        float: left; /* Posizionamento a sinistra */
+
+      }
+    }
+  
+    @media (max-width: 585px) {
+      main{
+        background-color: rgb(0, 47, 255);
+      }
+    }
+    
+  
+
+    @media (max-width: 430px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+      main{
+        background-color: rgb(0, 204, 255);
+      }
+    }
+  
+  
+    @media (max-width: 383px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+      main{
+        background-color: rgb(178, 84, 221);
+      }
+      .titolo-artista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 59px;
+        text-align: center;
+        line-height: 90%;
+        margin: 30px 0 30px 0;
+      }
+    
+      
+      .titolo-artista img {
+        margin: 0 0 5px ;
+        width: 220px;
+        padding: 2%;
+        float: left; /* Posizionamento a sinistra */
+
+      }
+    }
+
+
+
+
+  
