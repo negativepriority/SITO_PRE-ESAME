@@ -1,3 +1,5 @@
+@import url(font.css);
+
 ::selection {
   background-color: rgb(12, 12, 12);
   color:rgb(240, 233, 233) 
@@ -107,8 +109,8 @@ header div.logo {
 
 header div.logo a{
   color: #FEFAE0;
-  font-family: 'Poppins';
-  font-weight: 700;
+  font-family: "cocco";
+  font-weight: bold;
   margin: 0 0 0 16px;
   font-size: 25px;
   display: flex;
@@ -119,15 +121,15 @@ header div.logo a:hover{
 }
 
 header a {
-  font-family: 'Poppins';
-  font-weight: 500;
+  font-family: "cocco";
+  font-weight: medium;
   text-decoration: none;
   font-size: 18px;
   color: #FEFAE0;
 }
 
 header a:hover {
-  font-family: 'Poppins';
+  font-family: "cocco";
   text-decoration: none;
   color:#85D32C;
 }
@@ -147,14 +149,18 @@ header li {
 section.titolo {
 padding: 2%;
 font-size: 115px;
-font-family: 'Poppins';
-font-weight: 700;
 color: #283618;
 line-height: 155%;
 letter-spacing: -9px;
 opacity: 0;
 animation: text-in 1.2s ease-in-out forwards;
 }
+
+section.titolo h1 {
+  font-family: "cocco";
+  font-weight: bold;
+
+  }
 
 @keyframes text-in {
 from {
@@ -186,15 +192,15 @@ gap: 100px;
 
 .grid{
 color:#283618;
-font-weight: 500;
+font-weight: normal;
 }
 
 .grid h2 {
 padding: 0%;
 margin: 5% 0 0 0;
 font-size: 40px;
-font-family: 'Poppins';
-font-weight: 500;
+font-family: "cocco";
+font-weight: normal;
 line-height: 155%;
 letter-spacing: -1px;
 text-align: center;
@@ -254,15 +260,15 @@ width: 100%;
 }
 
 footer a, footer h3 {
-font-family: 'Poppins';
-font-weight: 400;
+font-family: "cocco";
+font-weight: normal;
 text-decoration: none;
 font-size: 16px;
 color: #FEFAE0;
 }
 
 footer a:hover {
-font-family: 'Poppins';
+font-family: "cocco";
 text-decoration: none;
 color:#85D32C;
 }

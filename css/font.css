@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "cocco";
+    src: url(../font/Poppins-Regular.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "cocco";
+    src: url(../font/Poppins-Medium.woff);
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "cocco";
+    src: url(../font/Poppins-Bold.woff);
+    font-weight: bold;
+}
