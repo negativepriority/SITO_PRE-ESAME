@@ -647,12 +647,12 @@ display: flex; /* Aggiunge il modello di box-flex */
 align-items: center; /* Allinea verticalmente al centro */
 margin: 70px 0px 0px 0px;
 padding: 1%;
-font-size: 130px;
-font-family: 'Poppins';
-font-weight: 700;
-color: #283618;
-line-height: 100%;
+font-size: 96px;
+line-height: 130%;
 letter-spacing: -6px;
+font-family: "cocco";
+font-weight: bold;
+color: #283618;
 opacity: 0;
 animation: text-in 1.2s ease-in-out forwards;
 
@@ -686,11 +686,11 @@ display: flex; /* Aggiunge il modello di box-flex */
  align-items: left; /* Allinea verticalmente al centro */
  padding: 3.3%;
  font-size: 22px;
- font-family: 'Poppins';
- font-weight: 500;
+ font-family: "cocco";
+ font-weight: medium;
  color: #283618;
  line-height: 135%;
- letter-spacing: -0.7px;
+ letter-spacing: -0.5px;
  transition: opacity 0.5s ease-in-out;
  opacity: 1;
 
@@ -721,9 +721,10 @@ display: flex; /* Aggiunge il modello di box-flex */
         align-items: center; /* Allinea verticalmente al centro */
         margin: 70px 0px 0px 0px;
         padding: 1%;
-        font-size: 105px;
-        line-height: 100%;
-        letter-spacing: -5px;
+        font-size: 87px;
+        line-height: 130%;
+        letter-spacing: -6px;
+
   
 
     }
@@ -749,9 +750,11 @@ display: flex; /* Aggiunge il modello di box-flex */
         align-items: center; /* Allinea verticalmente al centro */
         margin: 70px 0px 0px 0px;
         padding: 1%;
-        font-size: 100px;
-        line-height: 100%;
+        font-size: 74px;
+        line-height: 130%;
         letter-spacing: -5px;
+
+        
   
 
     }
@@ -786,9 +789,9 @@ display: flex; /* Aggiunge il modello di box-flex */
         align-items: center; /* Allinea verticalmente al centro */
         margin: 70px 0px 0px 0px;
         padding: 1%;
-        font-size: 80px;
-        line-height: 100%;
-        letter-spacing: -5px;
+        font-size: 56px;
+        line-height: 130%;
+        letter-spacing: -4px;
   
 
     }
@@ -810,8 +813,9 @@ display: flex; /* Aggiunge il modello di box-flex */
          align-items: left; /* Allinea verticalmente al centro */
          padding: 3.3%;
          font-size: 15px;
-         line-height: 135%;
+         line-height: 148%;
          letter-spacing: -0.5px;
+         margin: 40px 0px 0px 0px;
 
         }
     }
@@ -823,9 +827,9 @@ display: flex; /* Aggiunge il modello di box-flex */
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 70px;
+        font-size: 50px;
         text-align: center;
-        line-height: 93%;
+        line-height: 135%;
         margin: 30px 0 30px 0;
       }
     
@@ -856,10 +860,12 @@ display: flex; /* Aggiunge il modello di box-flex */
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 59px;
         text-align: center;
-        line-height: 90%;
         margin: 30px 0 30px 0;
+        line-height: 135%;
+        font-size: 40px;
+        letter-spacing: -2px;
+
       }
     
       
@@ -874,5 +880,138 @@ display: flex; /* Aggiunge il modello di box-flex */
 
 
 
+
+
+
+
+    /*----------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/* CHI SIAMO */
+
+
+.chi {
+  padding: 3%;
+  font-size: 95px;
+  color: #283618;
+  line-height: 150%;
+  letter-spacing: -5px;
+  margin: 20px 0px 0px 0px;
+  opacity: 0;
+  animation: text-in 1.2s ease-in-out forwards;
+  }
+  
+  .chi h1 {
+    font-family: "cocco";
+    font-weight: bold;
+  
+    }
+  
+
+
+
+
+
+
+    @media (max-width: 1050px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+
+      .chi {
+        padding: 2.5%;
+        font-size: 80px;
+        line-height: 155%;
+        letter-spacing: -9px;
+        }
+        
+      }
+      
+      @media (max-width: 950px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+
+
+
+        .chi {
+          padding: 2.5%;
+          font-size: 77px;
+          line-height: 155%;
+          letter-spacing: -9px;
+          }
+
+      
+
+      }
+      
+      @media (max-width: 875px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+
+        .chi {
+          padding: 2.5%;
+          font-size: 70px;
+          line-height: 155%;
+          letter-spacing: -9px;
+          margin: 40px 0px 0px 0px;
+          }
+      
+      }
+       
+      @media (max-width: 835px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */ 
+
+        .chi {
+          padding: 2.5%;
+          font-size: 55px;
+          line-height: 155%;
+          letter-spacing: -5px;
+          margin: 60px 0px 0px 0px;
+          }
+
+        }
+
+        @media (max-width: 630px) {
+
+          .chi {
+            padding: 2.5%;
+            font-size: 49px;
+            line-height: 155%;
+            letter-spacing: -5px;
+            margin: 60px 0px 0px 0px;
+            }
+        }
+
+        @media (max-width: 585px) {
+
+          .chi {
+            padding: 2.5%;
+            font-size: 40px;
+            line-height: 155%;
+            letter-spacing: -3px;
+            margin: 60px 0px 0px 0px;
+            }
+      }
+        
+      
+         
+         @media (max-width: 430px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+
+
+        .chi {
+          padding: 2.5%;
+          font-size: 38px;
+          line-height: 155%;
+          letter-spacing: -3px;
+          margin: 60px 0px 0px 0px;
+          }
+            }
+      
+      
+           @media (max-width: 383px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+
+            .chi {
+              padding: 2.5%;
+              font-size: 30px;
+              line-height: 155%;
+              letter-spacing: -3px;
+              margin: 60px 0px 0px 0px;
+              }
+
+            }
 
   
